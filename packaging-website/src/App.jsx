@@ -3,9 +3,12 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import HomePage from "./HomePage";
-import ProductsPage from "./ProductsPage";
+import PackagingProducts from "./PackagingProducts";
+import ElectricalProducts from "./ElectricalProducts";
+
 import AboutPage from "./AboutPage";
 import ContactPage from "./ContactPage";
+
 
 export default function App() {
   return (
@@ -13,9 +16,13 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<ProductsPage />} />
+        
+        
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/packagingProducts" element={<PackagingProducts />} />
+<Route path="/electrical-products" element={<ElectricalProducts />} />
+
       </Routes>
       <Footer />
     </Router>

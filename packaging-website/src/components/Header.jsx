@@ -11,7 +11,16 @@ export default function Header() {
       </Link>
       <nav className="nav">
         <Link to="/">Home</Link>
-        <Link to="/products">Products</Link>
+
+        <div className="dropdown">
+          <span>Products</span>
+          <div className="dropdown-content">
+            <Link to="/packagingproducts">Packaging Products</Link>
+           <Link to="/electrical-products">Electrical Products</Link>
+
+          </div>
+        </div>
+
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
       </nav>

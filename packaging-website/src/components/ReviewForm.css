@@ -1,0 +1,32 @@
+.review-form-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.review-form button {
+  background-color: #004aad;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background-color: #003380;
+}

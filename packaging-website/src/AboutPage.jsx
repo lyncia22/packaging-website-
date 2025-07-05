@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./AboutPage.css";
+import ReviewForm from "./components/ReviewForm";
 
 export default function AboutPage() {
   const [testimonials, setTestimonials] = useState([
@@ -57,25 +58,8 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="review-form">
-        <h3>Leave a Review</h3>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Your Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-          <textarea
-            placeholder="Your Review"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-          <button type="submit">Submit Review</button>
-        </form>
-      </div>
+      <ReviewForm />
+     
     </section>
   );
 }
