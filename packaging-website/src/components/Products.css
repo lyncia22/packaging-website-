@@ -63,3 +63,45 @@
 .view-all-btn:hover {
   background-color: #003380;
 }
+.products-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.view-all-btn {
+  background-color: #004aad;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.products-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  border-radius: 4px;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  min-width: 180px;
+}
+
+.products-dropdown:hover .products-dropdown-content {
+  display: block;
+}
+
+.products-dropdown-content a {
+  display: block;
+  padding: 0.3rem 0.5rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.products-dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+

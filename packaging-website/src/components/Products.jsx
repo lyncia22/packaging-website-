@@ -21,28 +21,14 @@ const products = [
     description: "Personalized packaging with your brand's logo & design.",
     image: "https://i.pinimg.com/736x/6d/ac/a5/6daca5cbdbe965f7b518684370402b4e.jpg",
   },
-  {
-    id: "wrapping-paper",
-    name: "Wrapping Paper",
-    description: "Premium quality wrapping paper to protect your items.",
-    image: "https://i.pinimg.com/736x/11/8a/3b/118a3b9953727cc1a5323dc6f4161fc7.jpg",
-  },
-  {
-    id: "tape",
-    name: "Packaging Tape",
-    description: "Strong adhesive tape to secure your packages.",
-    image: "https://i.pinimg.com/736x/1b/e8/07/1be8070f91b0fd117586c55cfa6715fd.jpg",
-  },
 ];
 
-export default function Products() {
-  const previewProducts = products.slice(0, 3); // Show only 3 products as preview
-
+  export default function Products() {
   return (
     <section className="products">
       <h3>Our Products</h3>
       <div className="product-grid">
-        {previewProducts.map((product) => (
+          {products.map((product) => (
           <div key={product.id} className="product-card">
             <img src={product.image} alt={product.name} />
             <h4>{product.name}</h4>
@@ -51,9 +37,14 @@ export default function Products() {
         ))}
       </div>
 
-      <Link to="/products" className="view-all-btn">
-        View All Products
-      </Link>
+      {/* Dropdown instead of plain button */}
+      <div className="products-dropdown">
+        <span className="view-all-btn">View All Products ▼</span>
+        <div className="products-dropdown-content">
+          <Link to="/packaging-products">Packaging Products</Link>
+          <Link to="/electrical-products">Electrical Products</Link>
+        </div>
+      </div>
     </section>
   );
 }
