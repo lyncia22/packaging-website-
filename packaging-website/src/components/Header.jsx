@@ -24,7 +24,7 @@ export default function Header() {
         <div className="dropdown">
   <span className="nav-link">Products ▼</span>
   <div className="dropdown-content">
-    <Link to="/PackagingProducts" onClick={() => setMenuOpen(false)}>Packaging Products</Link>
+    <Link to="/PackagingProducts" onClick={() => setMenuOpen(false)}>Packaging Products</Link> <br />
     <Link to="/ElectricalProducts" onClick={() => setMenuOpen(false)}>Electrical Products</Link>
   </div>
 </div>

@@ -10,9 +10,11 @@ import hero4 from "../assets/hero4.jpeg";
 import hero5 from "../assets/hero5.jpeg";
 import hero6 from "../assets/hero6.jpeg";
 import hero7 from "../assets/hero7.jpeg";
+import hero8 from "../assets/hero8.jpeg";
+import hero9 from "../assets/hero9.jpeg";
 
 // Array of images
-const images = [hero1, hero2, hero3, hero4, hero5, hero6, hero7];
+const images = [hero1, hero2, hero3, hero4, hero5, hero6, hero7, hero8, hero9];
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);
