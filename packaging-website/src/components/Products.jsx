@@ -41,8 +41,8 @@ const products = [
       <div className="products-dropdown">
         <span className="view-all-btn">View All Products ▼</span>
         <div className="products-dropdown-content">
-          <Link to="/packaging-products">Packaging Products</Link>
-          <Link to="/electrical-products">Electrical Products</Link>
+          <Link to="/PackagingProducts">Packaging Products</Link>
+          <Link to="/ElectricalProducts">Electrical Products</Link>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import "./Header.css";
 
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -21,12 +22,12 @@ export default function Header() {
         <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
 
         <div className="dropdown">
-          <span className="nav-link">Products ▼</span>
-          <div className="dropdown-content">
-            <Link to="/packaging-products" onClick={() => setMenuOpen(false)}>Packaging Products</Link>
-            <Link to="/electrical-products" onClick={() => setMenuOpen(false)}>Electrical Appliances</Link>
-          </div>
-        </div>
+  <span className="nav-link">Products ▼</span>
+  <div className="dropdown-content">
+    <Link to="/PackagingProducts" onClick={() => setMenuOpen(false)}>Packaging Products</Link>
+    <Link to="/ElectricalProducts" onClick={() => setMenuOpen(false)}>Electrical Products</Link>
+  </div>
+</div>
 
         <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>About</Link>
         <Link to="/contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact</Link>
