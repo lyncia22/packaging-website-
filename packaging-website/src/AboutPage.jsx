@@ -35,15 +35,15 @@ export default function AboutPage() {
     <section className="about-page">
       <div className="about-content">
         <h2>About Us</h2>
-        <p>
-          We are a trusted packaging supplier committed to providing high-quality, sustainable, and affordable packaging solutions for businesses of all sizes.
-        </p>
-        <p>
-          Our product range includes stand-alone pouches, ziplocks, cake packaging, food containers, cardboard boxes, and bin liners.
-        </p>
-        <p>
-          With years of experience in the industry, we understand the importance of quality packaging in protecting and presenting your products. Partner with us for solutions that work.
-        </p>
+<p>
+  We are a trusted supplier in Zimbabwe dedicated to providing high-quality, sustainable, and affordable packaging and electrical solutions. Whether you're running a bakery, a retail store, a warehouse, or a construction site, we have the products you need to protect, power, and present your goods and services.
+</p>
+<p>
+  Our packaging range includes stand-alone pouches, ziplocks, cake packaging, food containers, cardboard boxes, bin liners, and many more. On the electrical side, we supply essential appliances such as thyristors, timers, miniature circuit breakers (MCBs), overloads, conductors, cables, geyser elements, light bulbs, sockets & switches, fluorescent lights, and fluorescent light fitters—providing solutions for homes, offices, and industrial spaces.
+</p>
+      <p>
+  With years of industry experience, we understand that quality matters. Our goal is to deliver products that meet your needs, improve your operations, and help your business grow. Partner with us for reliable solutions that combine innovation, durability, and affordability.
+     </p>
       </div>
 
       <div className="testimonials">
