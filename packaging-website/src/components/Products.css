@@ -58,23 +58,18 @@
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .view-all-btn:hover {
   background-color: #003380;
 }
+
+/* Dropdown for View All */
 .products-dropdown {
   position: relative;
   display: inline-block;
   margin-top: 1rem;
-}
-
-.view-all-btn {
-  background-color: #004aad;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .products-dropdown-content {
@@ -105,3 +100,19 @@
   background-color: #f0f0f0;
 }
 
+/* ✅ Responsive Improvements */
+@media (max-width: 768px) {
+  .products h3 {
+    font-size: 2rem;
+  }
+
+  .view-all-btn,
+  .products-dropdown-content a {
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .products-dropdown-content {
+    min-width: 150px;
+  }
+}

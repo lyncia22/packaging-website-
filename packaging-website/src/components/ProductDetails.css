@@ -41,7 +41,30 @@
   transition: background-color 0.3s ease;
 }
 
+/* Button hover states */
 .back-btn:hover,
 .contact-btn:hover {
   background-color: #003380;
+}
+
+/* 🔑 Responsive Styles */
+@media (max-width: 768px) {
+  .product-details {
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  .product-details img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .back-btn,
+  .contact-btn {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+  }
 }
