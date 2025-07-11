@@ -43,7 +43,7 @@ export default function Hero() {
       {/* Hero Text */}
       <div className="hero-content">
         <h1> <span style={{ color: "blue" }}>McOlsen</span> Industrial Products</h1>
-        <p>Elevate your brand with sustainable, custom packaging.</p>
+        <p>"Power up your brand with eco-friendly packaging and smart electrical products – built for impact, made to last."</p>
        <Link to="/contact" className="hero-btn">Contact Us</Link>
 
       </div>
